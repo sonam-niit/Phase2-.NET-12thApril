@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        h2#myDiv{
+            -ms-transform: rotate(20deg);
+            -webkit-transform: rotate(2odeg);
+            transform: rotate(20deg);
+            background-image: linear-gradient(blue,yellow);
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            transform: translate(100px,50px);
+        }
+        div#ds{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            color: white;
+            transform: skew(10deg,10deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Rotate Demo</h1>
+
+    <p>Rotate method rotates an element clockwise or counter counter-clockwise</p>
+
+    <h2>This is my Normal Div</h2>
+    <h2 id="myDiv">This is rotated clockwise 20deg</h2>
+
+    <div>Hey.... I am moved from to 100px vertically and 50px horizontally... so happy</div>
+
+    <div id="ds">
+        Hey I am just scaled and skewed.....
+    </div>
+</body>
+</html>
