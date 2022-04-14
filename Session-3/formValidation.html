@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+     <title>Dropdown Demo</title>
+</head>
+
+<body>
+
+     <form class="needs-validation" novalidate>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="valid01">First Name</label>
+                <input type="text" class="form-control" id="valid01" placeholder="Enter your first Name" required>
+
+                <div class="invalid-feedback">
+                    First Name can not be Empty
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="valid02">Last Name</label>
+                <input type="text" class="form-control" id="valid02" placeholder="Enter your Last Name" required>
+
+                <div class="invalid-feedback">
+                    Last Name can not be Empty
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="valid03">User Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="valid03" placeholder="Enter your User Name"
+                    aria-labelledby="inputGroupPrepend" required>
+
+                    <div class="invalid-feedback">
+                        Please Choose a proper Username
+                     </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="valid04">City</label>
+                <input type="text" class="form-control" id="valid04" placeholder="Enter your City Name" required>
+
+                <div class="invalid-feedback">
+                    City can not be Empty
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="valid05">State</label>
+                <input type="text" class="form-control" id="valid05" placeholder="Enter your State Name" required>
+
+                <div class="invalid-feedback">
+                    State can not be Empty
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="valid06">ZipCode</label>
+                <input type="text" class="form-control" id="valid06" placeholder="Enter your Zipcode" required>
+
+                <div class="invalid-feedback">
+                    Zipcode can not be Empty
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="diabledinput">I like to read Topics</label>
+            <input id="diabledinput" class="form-control" type="text" placeholder="Web Development" disabled>
+        </div>
+        <p>Where did you find Us?</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="option1" id="rd1" name="locate">
+            <label class="form-check-label" for="rd1">Facebook</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="option1" id="rd1" name="locate">
+            <label class="form-check-label" for="rd1">LinkedIn</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="option1" id="rd1" name="locate">
+            <label class="form-check-label" for="rd1">Instagram</label>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check" required>
+                <label for="check" class="form-check-label">Agree Terms and Condition</label>
+                <div class="invalid-feedback">
+                    You must agree before submitting
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+     </form>
+
+     <script>
+         (function(){
+             'use strict';
+             window.addEventListener('load',function(){
+                 //fetch all forms
+                 var forms=document.getElementsByClassName('needs-validation');
+                 var validation=Array.prototype.filter.call(forms,function(form){
+                     form.addEventListener('submit',function(){
+                         if(form.checkValidity()===false){
+                             event.preventDefault();
+                             event.stopPropagation();
+                         }
+                         form.classList.add('was-validated');
+                     },false)
+                 })
+             },false);
+         })();
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
