@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Passing Function as an Argument</h2>
+    <script>
+        //msg is a parameter
+        function print(msg){
+            console.log("Message: "+msg)
+        }
+
+        print("Helloo") //passing value as an argument
+
+        //callback to handle async functionality of JAVAScript callback used
+        function loaddata(callback){
+            setTimeout(
+                        function()
+                        {
+                            console.log("Data Fetched from server");
+                            callback(); //calling the function passed as an argument
+                        }, 2000)
+
+        }
+        function display(){
+            console.log("data displayed");
+        }
+        loaddata(display); //passing function as argument
+
+
+    </script>
+</body>
+</html>

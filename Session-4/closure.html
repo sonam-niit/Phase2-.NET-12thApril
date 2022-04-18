@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>closure</h2>
+    <script>
+        let x=10;
+
+        function test(){
+            let x=20;
+            console.log("X: "+x) // print 20
+        }
+        test();
+        console.log("X: "+x) //print 10
+
+
+        /*
+        declare varible with var parent scope,
+        let (value can change with block scope),
+        const (Constant- will not change with block scope)
+        */
+
+        function demoScope(){
+            //parent block
+
+            if(true){
+                //blockScope
+                var a="hello";
+                let b="good morning";
+                const c=3.14;
+            }
+
+            console.log("Parent Scope Var "+a);
+            console.log("Block Scope Let "+b);
+            console.log("Block Scope Const "+c);
+        }
+        demoScope();
+    </script>
+</body>
+</html>
