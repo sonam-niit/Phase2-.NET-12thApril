@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Map Demo</h2>
+    <script>
+        var map= new Map(); // map is collection, can store value in key-value pair
+
+        //let's set the values
+        map.set(1,"Sonam");
+        map.set(2,"Akshata");
+        map.set(3,"Abhipray");
+        map.set(4,"Khusi");
+
+        console.log(map);
+        console.log("Size: "+map.size)
+
+        console.log("Map has 5 key? "+ map.has(5)); //false
+        console.log("map has key 3? "+map.has(3));  //true
+
+        //get method
+        console.log("Get Value of Key 4: "+map.get(4));
+        console.log("Delete record 4:" +map.delete(4))
+        console.log(map);
+        console.log("Using Entris method")
+        let entries=map.entries();
+        for(let x of entries){
+            console.log(x[0] +" "+x[1]);
+        }
+        console.log("Using Keys method")
+        let keys= map.keys();
+        for(let k of keys){
+            console.log(k +" "+map.get(k))
+        }
+        console.log("ForEach ");
+        map.forEach(function(value,key){
+            console.log(key+" "+value)
+        })
+        map.clear();
+        console.log(map);
+
+    </script>
+</body>
+</html>
