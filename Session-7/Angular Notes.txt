@@ -1,0 +1,68 @@
+installed Node:
+
+check node version: node -v
+
+check npm version: npm -v
+
+____________________________________________
+
+install Angular
+
+>npm install -g @angular/cli
+
+check version of Angular
+
+>ng --version
+
+let's creat Angular Application
+
+>ng new myapp
+
+it will ask you- do you want create Routing? type y
+ask for css selection > css and enter
+
+this will take some time to create your application
+
+move to your app folder
+>cd myapp
+
+>ng serve
+
+see the output in browser http://localhost:4200/
+
+Open your App in VS Code to understand the Structure
+---------------------------------------------------------------
+App component is root component of out Application
+
+app.module.ts --> module file --> main file where you can configure all components, all imports, all providers
+etc.
+
+app-routing.module.ts --> you can configure your routes (navigation)
+
+------------------------------------------------------------
+
+below 4 files are common for all component which you will create
+
+app.component.html -- HTML page
+app.component.css -- CSS page
+app.component.ts -- Code
+app.component.spec.ts -- write your test cases (test Code)
+
+simplilary if you wnat to create use component you have to creat this type of 4 file
+
+user.component.ts
+user.component.html
+user.component.css
+user.component.spec.ts
+
+(what is component?)
+
+using angular we can create SPA (Single page application)
+
+
+how to create component?
+
+ng generate component user (ng g c user)
+
+This command will create (.html,.ts,.css,.spec.ts) files and register the component in app.module.ts file
+__________________________________________________________________________________________________________
