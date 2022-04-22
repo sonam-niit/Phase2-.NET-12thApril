@@ -18,4 +18,7 @@ export class DataComponent implements OnInit {
   imgurl:string="./assets/images/angular.png";
   h:number=200;
   w:number=300;
+  isSpecial:boolean=false;
+  rating:number=4.5;
+  yellow:string="yellow"
 }

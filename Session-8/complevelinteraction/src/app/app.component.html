@@ -1,0 +1,7 @@
+<div>
+<h1>This is my parent Component</h1>
+
+<h3>Value coming from the child component is: {{cdata}}</h3>
+Enter Your Text: <input type="text" (keyup)="0" #ptext/>
+</div>
+<app-child [pdata]="ptext.value" (myChildEvent)="cdata=$event"></app-child>

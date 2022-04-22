@@ -1,0 +1,15 @@
+<h3>Event Binding</h3>
+<hr>
+<button class="btn btn-primary"
+(click)="show()">Show Content</button>
+
+<br><br>
+<p [style.background-color]="'red'"
+*ngIf="visible" >
+    This is my paragraph
+</p>
+
+<h2>Two Way Binding</h2>
+<h3>Message: {{message}}</h3>
+
+<input type="text" [(ngModel)]="message"/>

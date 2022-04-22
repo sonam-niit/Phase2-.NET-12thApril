@@ -8,3 +8,32 @@
 <a href="{{url}}" target="{{targetvalue}}">Click Here to open Google</a>
 
 <img [src]="imgurl" [height]="h" [width]="w">
+<h3>Class Binding</h3>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Availability</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td [style.color]="isSpecial?'red':'blue'"
+            [style.font-weight]="700">Pen</td>
+            <td [class.inStock]="true">23-04-2022</td>
+            <td [style.color]="rating>=4.5?'green':'red'"
+                [style.font-weight]="700">4.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td [style.background-color]="yellow">Pencil</td>
+            <td [class.inStock]="true">23-06-2022</td>
+            <td>4.3</td>
+        </tr>
+    </tbody>
+
+</table>
