@@ -1,0 +1,26 @@
+Enter Any Number:
+<input type="text" [(ngModel)]="num1">
+<div [ngSwitch]="num1">
+
+    <div *ngSwitchCase="1">
+        Today is Monday
+    </div>
+    <div *ngSwitchCase="2">
+        Today is Tuesday
+    </div>
+    <div *ngSwitchCase="3">
+        Today is Wednesday
+    </div>
+    <div *ngSwitchCase="4">
+        Today is Thursday
+    </div>
+    <div *ngSwitchCase="5">
+        Today is friday
+    </div>
+    <div *ngSwitchCase="6">
+        Today is Saturday
+    </div>
+    <div *ngSwitchCase="7">
+        Today is Sunday
+    </div>
+</div>

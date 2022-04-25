@@ -1,0 +1,23 @@
+<h1>My List Component</h1>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of people" [ngSwitch]="p.country">
+
+            <td>{{p.name}}</td>
+            <td>{{p.email}}</td>
+
+            <td *ngSwitchCase="'US'" class="text-success">{{p.country}}</td>
+            <td *ngSwitchCase="'UK'" class="text-warning">{{p.country}}</td>
+            <td *ngSwitchCase="'India'" class="text-primary">{{p.country}}</td>
+            <td *ngSwitchCase="'Singapour'" class="text-info">{{p.country}}</td>
+        </tr>
+    </tbody>
+</table>
