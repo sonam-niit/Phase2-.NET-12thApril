@@ -1,0 +1,40 @@
+Bootstrap Our Application
+________________________________________________
+
+means create angular application responsive.
+
+multiple ways using that we can include bootstrap in out application
+
+Way 1:
+added bootstrap.min.css and bootstrap.min.js and jquery.min.js
+
+included in index.html
+
+by default everytime this page is going t load so you can include and you can user.
+
+Way 2:
+
+we can also download the bootstrap and include the same in style.css file.
+
+download bootsrap: npm install bootstrap
+
+check package.json for bootstrap
+
+edit styles.css
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+Way 3:
+
+open angular.jso file and edit scripts and styles
+
+"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+
+also try to create some component with bootstrap classes and check classes are working or not.

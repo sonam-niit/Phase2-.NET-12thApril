@@ -1,0 +1,33 @@
+<h1>Pipes Demo</h1>
+<h3>Uppercase and LowerCase Pipes</h3>
+<hr>
+<h4>{{message | uppercase}}</h4>
+<h4>{{message | lowercase}}</h4>
+<h3>Decimal Pipes</h3>
+<hr>
+<h5>Without any format {{pi}}</h5>
+<p>.5-5 <b>{{pi | number : '.5-5'}}</b></p>
+<p>2.10-10 <b>{{pi | number : '2.10-10'}}</b></p>
+<p>.3-3 <b>{{pi | number : '.3-3'}}</b></p>
+<h3>Currency Pipes</h3>
+<hr>
+<p>In USD: {{num1 | currency : 'USD' :true}}</p>
+<p>In USD: {{num1 | currency : 'USD':false : '3.3-3'}}</p>
+<p>In EURO: {{num2 | currency : 'EURO':true : '1.4-4'}}</p>
+<p>In INR: {{num2 | currency : 'INR':true : '3.3-3'}}</p>
+<h3>Date Pipes</h3>
+<hr>
+<p>Today is: {{today}}</p>
+<p>Medium by default: {{today| date}}</p>
+<p>Short Date: {{today| date : 'shortDate'}}</p>
+<p>Long date: {{today| date : 'longDate'}}</p>
+<p>Today is: {{today | date:"dd/MM/yyyy"}}</p>
+<h3>JSON Pipe</h3>
+<hr>
+<p>without JSON {{user}}</p>
+<p>with JSON {{user | json}}</p>
+<p>without JSON {{user.fname }} {{user.lname}}</p>
+<h3>Custome Pipes</h3>
+<hr>
+<p>{{name | changespace : '@'}}</p>
+<p>{{message | convertToSpace : '-'}}</p>
