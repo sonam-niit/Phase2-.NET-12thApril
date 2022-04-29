@@ -1,0 +1,19 @@
+<div class="container">
+
+    <h4 class="text-center text-secondary">Product List Page</h4>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of products">
+                <td>{{p.id}}</td>
+                <td><a routerLink="/productdetail/{{p.id}}">  {{p.name}} </a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h4 class="text-center text-secondary">User List Page</h4>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <td>{{u.id}}</td>
+                <td>{{u.name}} </td>
+                <td>{{u.address.street}} {{u.address.geo.lat}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

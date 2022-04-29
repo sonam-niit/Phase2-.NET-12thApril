@@ -1,0 +1,15 @@
+<div class="container">
+    <h4>Product Detail Page</h4>
+
+    <div *ngFor="let product of products">
+    <h5>{{product.name}}</h5>
+    <hr>
+    <p>
+        Availability: {{product.available}} <br>
+        Rating: {{product.rating}} <br>
+        Price: {{product.price}} <br>
+    </p>
+
+    <button class="btn btn-primary" (click)="goBack()">Back</button>
+</div>
+</div>

@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"pencil",
+        "price":5.5,
+        "available":"23-04-2022",
+        "rating":4.5
+    },
+    {
+        "id":2,
+        "name":"pen",
+        "price":15,
+        "available":"27-04-2022",
+        "rating":4.7
+    },
+    {
+        "id":3,
+        "name":"Eraser",
+        "price":3.3,
+        "available":"29-04-2022",
+        "rating":4.1
+    },
+    {
+        "id":4,
+        "name":"Scale",
+        "price":25,
+        "available":"23-05-2022",
+        "rating":4.6
+    }
+]
